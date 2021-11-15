@@ -1,0 +1,70 @@
+{
+    "app": {
+        "apiVersion": {
+            "compatible": 4,
+            "releaseType": "Release",
+            "target": 5
+        },
+        "vendor": "example",
+        "bundleName": "com.example.intents_and_serialization",
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "abilities": [
+            {
+                "iconId": 16777220,
+                "skills": [
+                    {
+                        "entities": [
+                            "entity.system.home"
+                        ],
+                        "actions": [
+                            "action.system.home"
+                        ]
+                    }
+                ],
+                "orientation": "unspecified",
+                "descriptionId": 16777218,
+                "labelId": 16777216,
+                "icon": "$media:icon",
+                "name": "com.example.intents_and_serialization.MainAbility",
+                "description": "$string:mainability_description",
+                "label": "$string:entry_MainAbility",
+                "type": "page",
+                "homeAbility": true,
+                "launchType": "standard"
+            },
+            {
+                "iconId": 16777220,
+                "orientation": "unspecified",
+                "icon": "$media:icon",
+                "name": "com.example.intents_and_serialization.SecondAbility",
+                "description": "$string:secondability_description",
+                "label": "$string:entry_SecondAbility",
+                "type": "page",
+                "homeAbility": false,
+                "launchType": "standard"
+            }
+        ],
+        "deviceType": [
+            "phone",
+            "tablet",
+            "tv"
+        ],
+        "mainAbility": "com.example.intents_and_serialization.MainAbility",
+        "distro": {
+            "moduleType": "entry",
+            "installationFree": false,
+            "deliveryWithInstall": true,
+            "moduleName": "entry"
+        },
+        "package": "com.example.intents_and_serialization",
+        "name": ".MyApplication"
+    }
+}
